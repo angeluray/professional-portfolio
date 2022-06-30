@@ -3,7 +3,7 @@
   --primary-color: #fff;
   --secondary-color: #9490ff;
   --third-color: #c8c8d4;
-  --fourth-color: #ed6cff;
+  --fourth-color: #f5f5ff;
   --fifth-color: #c4c4c4;
   --sixth-color: #646369;
   --seventh-color: #6d6c70;
@@ -28,17 +28,16 @@ a {
   color: var(--neutral-color);
 }
 
-.nav-bar {
+.top-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  max-width: max-content;
   font-size: 18px;
   font-weight: bold;
   padding: 0 24px;
@@ -55,6 +54,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .my-name {
@@ -84,33 +84,35 @@ a {
   padding: 0 24px;
 }
 
-.my-knowledge {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .my-languages,
 .my-frameworks,
 .my-skills {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  padding: 12px;
-  line-height: 24px;
+  flex-wrap: wrap;
+  width: 40%;
 }
 
-.skill-name {
+.listitle {
+  font-size: 12px;
+  font-weight: bold;
   color: var(--secondary-color);
-  text-align: center;
 }
 
 ul li {
   display: flex;
   align-items: center;
   font-size: 15px;
-  line-height: 24px;
+  line-height: 36px;
   font-weight: 400;
   list-style-type: none;
+  color: var(--fourth-color);
+  width: 100px;
+}
+
+.organize {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .my-socialmedia {
