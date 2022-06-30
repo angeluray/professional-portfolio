@@ -1,0 +1,147 @@
+:root {
+  --theme-color: #191765;
+  --primary-color: #fff;
+  --secondary-color: #9490ff;
+  --third-color: #c8c8d4;
+  --fourth-color: #f5f5ff;
+  --fifth-color: #c4c4c4;
+  --sixth-color: #646369;
+  --seventh-color: #6d6c70;
+  --nineth-color: #3e3837;
+  --tenth-color: #7d73fc;
+  --neutral-color: #f7f3ff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--theme-color);
+  max-width: 375px;
+  margin: auto;
+  color: var(--neutral-color);
+  background-image: url(images/topcircles.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+a {
+  text-decoration: none;
+  color: var(--neutral-color);
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 24px;
+  color: var(--primary-color);
+}
+
+.open-menu {
+  width: 50px;
+  height: 50px;
+  padding: 0 24px;
+}
+
+.top-headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.my-name {
+  padding: 12px;
+  margin: 2;
+}
+
+.main-name {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--tenth-color);
+}
+
+.pro-name {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  color: #edecff;
+}
+
+.top-headline-despt {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--third-color);
+  padding: 0 24px;
+}
+
+.my-languages,
+.my-frameworks,
+.my-skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.listitle {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 400;
+  list-style-type: none;
+  color: var(--fourth-color);
+  width: 100px;
+}
+
+.organize {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-socialmedia {
+  display: flex;
+  justify-content: center;
+  margin: 58px auto;
+}
+
+.icon {
+  padding: 10px;
+}
+
+.my-work-arrow {
+  background: none;
+  border: none;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.arrow-word {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.devider {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
