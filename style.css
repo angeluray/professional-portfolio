@@ -17,7 +17,7 @@ body {
   background: var(--theme-color);
   max-width: 375px;
   margin: auto;
-  color: var(--neutral-color); /* puede ser otro */
+  color: var(--neutral-color);
   background-image: url(images/topcircles.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -25,7 +25,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--neutral-color); /* puede ser otro */
+  color: var(--neutral-color);
 }
 
 .nav-bar {
