@@ -1,6 +1,6 @@
 # Portfolio: Set up and Mobile Skeleton
 
-> This project includes the firts 2 sections of my portfolio which are the header section and the headline, everything was built according to microverse's figma templates, and following the project guidelines/instructions.
+> This project includes my Professional portofolio's Header, Headline and Work section, everything was built according to microverse's figma templates, and following the project guidelines/instructions.
 
 
 ## Built With
