@@ -5,9 +5,9 @@
   --third-color: #c8c8d4;
   --fourth-color: #f5f5ff;
   --fifth-color: #c4c4c4;
-  --sixth-color: #646369;
+  --sixth-color: #dcdce8;
   --seventh-color: #6d6c70;
-  --nineth-color: #3e3837;
+  --nineth-color: #949086;
   --tenth-color: #7d73fc;
   --neutral-color: #f7f3ff;
 }
@@ -18,9 +18,6 @@ body {
   max-width: 375px;
   margin: auto;
   color: var(--neutral-color);
-  background-image: url(images/topcircles.png);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 a {
@@ -55,6 +52,9 @@ a {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-image: url(images/topcircles.png);
+  background-repeat: no-repeat;
+  background-size: contain
 }
 
 .my-name {
@@ -145,3 +145,81 @@ ul li {
   justify-content: center;
   margin: auto;
 }
+.my-work {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  row-gap: 30px;
+  background-image: url(images/bodycircles.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0%;
+}
+.works-head { 
+  font-size: 40px;
+  font-weight: 400px;
+  width: 250px;
+  line-height: 52px;
+  overflow-wrap: break-word;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: auto;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  gap: 24px;
+}
+.my-work-title {
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.my-work-description,
+.my-work-tools {
+  font-family: 'Inter', sans-serif;
+}
+.my-work-description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--sixth-color);
+}
+.my-work-tools {
+    margin: 0;
+    padding: 0;
+    gap: 41px;
+    width: 213px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards ul{
+  font-size: 15px;
+  margin: auto;
+}
+.visualize-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97px;
+    height: 44px;
+    background-color: var(--tenth-color);
+    border: none;
+}
+
+.visualize-button a {
+    font-family: 'Roboto';
+    padding: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.circles.bkg {
+  background-image: url(images/bodycircles.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
