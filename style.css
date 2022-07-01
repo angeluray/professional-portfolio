@@ -18,6 +18,10 @@ body {
   max-width: 375px;
   margin: auto;
   color: var(--neutral-color);
+  background-image: url(images/circle1.svg), url(images/circle2.svg), url(images/circle3.svg), url(images/circle4.svg), url(images/circle5.svg), url(images/circle6.svg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 275px 275px, 194px 194px, 380px 940px, 220px 1100px, 600px 280px, 220px 1000px;
+  background-position: top 40px left -47px, right -40px top 512px, left -140px top 1170px, right -70px top 1820px, left -200px top 3080px, right -10px top 3490px;
 }
 
 a {
@@ -51,10 +55,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 375px;
+  margin: auto;
   flex-wrap: wrap;
-  background-image: url(images/topcircles.png);
-  background-repeat: no-repeat;
-  background-size: contain
 }
 
 .my-name {
@@ -93,21 +96,10 @@ a {
   width: 40%;
 }
 
-.listitle {
+.organize .listitle {
   font-size: 12px;
   font-weight: bold;
   color: var(--secondary-color);
-}
-
-ul li {
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-  line-height: 36px;
-  font-weight: 400;
-  list-style-type: none;
-  color: var(--fourth-color);
-  width: 100px;
 }
 
 .organize {
@@ -145,17 +137,15 @@ ul li {
   justify-content: center;
   margin: auto;
 }
+
 .my-work {
   margin: auto;
   display: grid;
   justify-content: center;
   row-gap: 30px;
-  background-image: url(images/bodycircles.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0%;
 }
-.works-head { 
+
+.works-head {
   font-size: 40px;
   font-weight: 400px;
   width: 250px;
@@ -165,61 +155,79 @@ ul li {
   color: var(--secondary-color);
   margin-bottom: auto;
 }
+
 .cards {
   display: flex;
   flex-direction: column;
   width: 327px;
   gap: 24px;
 }
+
 .my-work-title {
-  font-family: 'Roboto';
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
 }
+
 .my-work-description,
 .my-work-tools {
   font-family: 'Inter', sans-serif;
 }
+
 .my-work-description {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   color: var(--sixth-color);
 }
-.my-work-tools {
-    margin: 0;
-    padding: 0;
-    gap: 41px;
-    width: 213px;
-    display: flex;
-    justify-content: center;
+
+.my-work-tools li {
+  border-left: 1px gray solid;
+  padding-left: 15px;
+  margin: 10px;
 }
 
-.cards ul{
+.organize ul li {
+  display: flex;
+  align-items: center;
   font-size: 15px;
+  line-height: 36px;
+  font-weight: 400;
+  list-style-type: none;
+  color: var(--fourth-color);
+  width: 100px;
+}
+
+.my-work-tools .li-css {
+  border: none;
+}
+
+.my-work-tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.cards ul {
   margin: auto;
+  font-size: 15px;
+  color: #fff;
 }
+
 .visualize-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 97px;
-    height: 44px;
-    background-color: var(--tenth-color);
-    border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 44px;
+  background-color: var(--tenth-color);
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  margin-bottom: 18px;
 }
-
-.visualize-button a {
-    font-family: 'Roboto';
-    padding: 12px;
-    font-size: 12px;
-    font-weight: 600;
-}
-.circles.bkg {
-  background-image: url(images/bodycircles.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-
