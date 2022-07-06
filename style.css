@@ -276,3 +276,31 @@ a {
   margin-bottom: 50px;
 }
 
+.my-form {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 327px;
+}
+
+.my-form-button {
+  font-size: 12px;
+  width: 95px;
+  height: 44px;
+  background-color: var(--tenth-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+.pseudo{
+  color:#5e42d7;
+}
+
