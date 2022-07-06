@@ -300,7 +300,32 @@ a {
   margin-bottom: 90px;
 }
 
-.pseudo{
-  color:#5e42d7;
+.my-form-button:enabled {
+  background-color: var(--tenth-color);
 }
+
+.my-form-button:hover {
+  background-color: var(--tenth-color);
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.my-form-button:active {
+  background-color: var(--seventh-color);
+}
+
+input,
+textarea {
+  width: 327px;
+  padding: 8px;
+}
+
+input {
+  height: 40px;
+}
+
+textarea {
+  height: 148px;
+  resize: none;
+}
+
 
