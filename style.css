@@ -328,4 +328,15 @@ textarea {
   resize: none;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.my-last-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
