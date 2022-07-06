@@ -11,6 +11,7 @@
   --tenth-color: #7d73fc;
   --neutral-color: #f7f3ff;
   --disabled-color: #2a2b33;
+  --contact-color: #9390ff;
 }
 
 body {
@@ -245,4 +246,102 @@ a {
 
 .visualize-button:active {
   background-color: var(--seventh-color);
+}
+
+.my-contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us,
+.contact-quote {
+  text-align: center;
+  line-height: 24px;
+}
+
+.contact-us {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--contact-color);
+  margin-top: 120px;
+}
+
+.contact-quote {
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  color: var(--fourth-color);
+  margin-bottom: 50px;
+}
+
+.my-form {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 327px;
+}
+
+.my-form-button {
+  font-size: 12px;
+  width: 95px;
+  height: 44px;
+  background-color: var(--tenth-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+.my-form-button:enabled {
+  background-color: var(--tenth-color);
+}
+
+.my-form-button:hover {
+  background-color: var(--tenth-color);
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.my-form-button:active {
+  background-color: var(--seventh-color);
+}
+
+input,
+textarea {
+  width: 327px;
+  padding: 8px;
+}
+
+input {
+  height: 40px;
+}
+
+textarea {
+  height: 148px;
+  resize: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-last-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.my-email {
+  font-size: 20px;
+  margin-bottom: 60px;
 }
