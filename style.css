@@ -249,6 +249,7 @@ header {
   border: none;
   margin-bottom: 18px;
   cursor: pointer;
+  transition: 0.5s linear;
 }
 
 .visualize-button:enabled {
@@ -314,6 +315,7 @@ header {
   border: none;
   margin-top: 20px;
   margin-bottom: 90px;
+  transition: 0.5s linear;
 }
 
 .my-form-button:enabled {
@@ -380,6 +382,14 @@ footer {
 
 .my-email-desktop {
   display: none;
+}
+
+.my-project-image {
+  transition: 0.5s linear;
+}
+
+.my-project-image:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (min-width: 768px) {
@@ -536,6 +546,7 @@ footer {
   .my-project-image {
     width: 660px;
     height: 448px;
+    transition: 0.5s linear;
   }
 
   .my-work-title,
@@ -647,5 +658,9 @@ footer {
     display: block;
     font-size: 20px;
     margin-top: 7px;
+  }
+
+  .my-project-image:hover {
+    transform: scale(1.02);
   }
 }
