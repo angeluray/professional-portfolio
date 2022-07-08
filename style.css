@@ -249,6 +249,7 @@ header {
   border: none;
   margin-bottom: 18px;
   cursor: pointer;
+  transition: 0.5s linear;
 }
 
 .visualize-button:enabled {
@@ -314,6 +315,7 @@ header {
   border: none;
   margin-top: 20px;
   margin-bottom: 90px;
+  transition: 0.5s linear;
 }
 
 .my-form-button:enabled {
@@ -544,6 +546,7 @@ footer {
   .my-project-image {
     width: 660px;
     height: 448px;
+    transition: 0.5s linear;
   }
 
   .my-work-title,
@@ -657,12 +660,7 @@ footer {
     margin-top: 7px;
   }
 
-  .my-project-image {
-    transition: 0.5s linear;
-  }
-  
-.my-project-image:hover {
+  .my-project-image:hover {
     transform: scale(1.02);
   }
-
 }
