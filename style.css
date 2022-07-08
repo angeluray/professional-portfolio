@@ -382,6 +382,14 @@ footer {
   display: none;
 }
 
+.my-project-image {
+  transition: 0.5s linear;
+}
+
+.my-project-image:hover {
+  transform: scale(1.1);
+}
+
 @media only screen and (min-width: 768px) {
   * {
     box-sizing: border-box;
@@ -648,4 +656,13 @@ footer {
     font-size: 20px;
     margin-top: 7px;
   }
+
+  .my-project-image {
+    transition: 0.5s linear;
+  }
+  
+.my-project-image:hover {
+    transform: scale(1.02);
+  }
+
 }
