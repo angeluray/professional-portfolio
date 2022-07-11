@@ -10,7 +10,7 @@
 
 ## Live Demo 
 
-* None 
+* Go to [my professional portfolio](https://angeluray.github.io/professional-portfolio/) link, to see my project's live demo. 
 
 
 ## Getting Started
