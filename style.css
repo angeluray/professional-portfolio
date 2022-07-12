@@ -8,7 +8,7 @@
   --sixth-color: #dcdce8;
   --seventh-color: #5e42d7;
   --nineth-color: #949086;
-  --tenth-color: #7d73fc;
+  --tenth-color: #6161FF;
   --neutral-color: #f7f3ff;
   --disabled-color: #2a2b33;
   --contact-color: #9390ff;
@@ -393,6 +393,10 @@ footer {
   transform: scale(1.1);
 }
 
+label {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   * {
     box-sizing: border-box;
@@ -531,6 +535,7 @@ footer {
     align-items: center;
     margin: 0 auto;
     gap: 24px;
+    width: 80.277vw;
   }
 
   .card-2,
@@ -539,23 +544,19 @@ footer {
   }
 
   .image-container {
-    width: 684px;
+   
     height: 448px;
     padding: 0 1px;
   }
 
   .my-project-image {
-    width: 660px;
+    width: 45.83vw;
     height: 448px;
     transition: 0.5s linear;
   }
 
-  .my-work-title,
-  .my-work-description {
-    width: 462px;
-  }
-
   .my-flex-card {
+    width:31.11vw;
     height: 400px;
     display: flex;
     flex-direction: column;
