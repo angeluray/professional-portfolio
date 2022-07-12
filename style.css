@@ -8,7 +8,7 @@
   --sixth-color: #dcdce8;
   --seventh-color: #5e42d7;
   --nineth-color: #949086;
-  --tenth-color: #6161FF;
+  --tenth-color: #6161ff;
   --neutral-color: #f7f3ff;
   --disabled-color: #2a2b33;
   --contact-color: #9390ff;
@@ -544,7 +544,6 @@ label {
   }
 
   .image-container {
-   
     height: 448px;
     padding: 0 1px;
   }
@@ -556,7 +555,7 @@ label {
   }
 
   .my-flex-card {
-    width:31.11vw;
+    width: 31.11vw;
     height: 400px;
     display: flex;
     flex-direction: column;

@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/angeluray/professional-portfolio#readme",
   "devDependencies": {
-    "hint": "^7.0.1",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
+    "hint": "^7.1.0",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-csstree-validator": "^2.0.0",
+    "stylelint-scss": "^4.3.0"
   }
 }
