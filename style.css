@@ -15,15 +15,21 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   background: var(--theme-color);
   max-width: 375px;
   margin: auto;
   color: var(--neutral-color);
-  background-image: url(images/circle1.svg), url(images/circle2.svg), url(images/circle3.svg), url(images/circle4.svg), url(images/circle5.svg), url(images/circle6.svg);
+  background-image: url("images/circle1.svg"), url("images/circle2.svg"), url("images/circle3.svg"), url("images/circle4.svg"), url("images/circle5.svg"), url("images/circle6.svg");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 275px 275px, 194px 194px, 380px 940px, 220px 1100px, 600px 280px, 220px 1000px;
-  background-position: top 40px left -47px, right -40px top 512px, left -40px top 1270px, right -70px top 1820px, left -200px top 3080px, right -10px top 3490px;
+  background-position:
+    top 40px left -47px,
+    right -40px top 512px,
+    left -40px top 1270px,
+    right -70px top 1820px,
+    left -200px top 3080px,
+    right -10px top 3490px;
 }
 
 a {
@@ -48,7 +54,7 @@ header {
 
 .logo {
   max-width: max-content;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 600;
   padding: 0 24px;
@@ -63,11 +69,10 @@ header {
 
 .top-headline {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: space-between;
   max-width: 375px;
   margin: auto;
-  flex-wrap: wrap;
 }
 
 .my-name {
@@ -100,8 +105,7 @@ header {
 .my-frameworks,
 .my-skills {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   width: 40%;
 }
 
@@ -189,7 +193,7 @@ header {
 
 .my-work-description,
 .my-work-tools {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 .my-work-description {
@@ -259,7 +263,7 @@ header {
 
 .visualize-button:hover {
   background-color: var(--tenth-color);
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  box-shadow: 0 8px 16px rgb(125 115 252 / 48%);
 }
 
 .visualize-button:active {
@@ -280,7 +284,7 @@ header {
 }
 
 .contact-us {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: var(--contact-color);
@@ -289,7 +293,7 @@ header {
 
 .contact-quote {
   font-size: 18px;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   color: var(--fourth-color);
   margin-bottom: 50px;
 }
@@ -325,7 +329,7 @@ header {
 
 .my-form-button:hover {
   background-color: var(--tenth-color);
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  box-shadow: 0 8px 16px rgb(125 115 252 / 48%);
 }
 
 .my-form-button:active {
@@ -508,7 +512,7 @@ label {
 
   .my-work {
     margin-top: 150px;
-    padding: 12px 12px;
+    padding: 12px;
     gap: 88px;
   }
 
@@ -594,7 +598,7 @@ label {
 
   .contact-desktop {
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 40px;
     font-weight: 700;
     color: var(--contact-color);
@@ -605,7 +609,7 @@ label {
   .contact-quote {
     font-size: 20px;
     font-weight: 400;
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
     color: var(--fourth-color);
     margin-bottom: 80px;
     width: 735px;
