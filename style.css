@@ -17,7 +17,7 @@
 body {
   font-family: Roboto, sans-serif;
   background: var(--theme-color);
-  max-width: 375px;
+  max-width: 77%;
   margin: auto;
   color: var(--neutral-color);
   background-image: url("images/circle1.svg"), url("images/circle2.svg"), url("images/circle3.svg"), url("images/circle4.svg"), url("images/circle5.svg"), url("images/circle6.svg");
@@ -399,6 +399,61 @@ footer {
 
 label {
   display: none;
+}
+
+.menu-closed-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-closed-icon {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 24px 24px;
+  }
+
+  .nav-bar {
+    background-color: var(--theme-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+  }
+
+  .menu-sections {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 24px;
+    gap: 19px;
+  }
+
+  .menu-sections li {
+    display: flex;
+    justify-content: space-between;
+    max-width: 87%;
+    border: 1px solid white;
+  }
+  
+  .little-arrow {
+    width: 10px;
+    height: 15px;
+    margin-top: 8px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
