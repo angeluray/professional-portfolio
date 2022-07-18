@@ -420,21 +420,27 @@ label {
 
   .menu-closed-icon {
     display: flex;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding: 24px 24px;
+    margin-left: 300px;
   }
 
   .nav-bar {
     background-color: var(--theme-color);
-    height: 100vh;
-    width: 100vw;
+    margin-top: 25px;
+    width: 375px;
+    height: 812px;
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
-    background-image: url("images/shape-1.svg"), url("images/shape-2.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: top: 92px left: 42.04px, top: 115.54px left: 318.94px;
+    background-image: url("images/shape-1.svg");
+    background-repeat: no-repeat;
+  }
+
+  .mobile-menu .mobile-img {
+    background-repeat: no-repeat;
+    margin-top: 180px;
+    margin-left: 200px;
   }
 
   .menu-sections {
@@ -448,8 +454,7 @@ label {
   .menu-sections li {
     display: flex;
     justify-content: space-between;
-    max-width: 87%;
-    border: 1px solid white;
+    max-width: 90%;
   }
   
   .little-arrow {
@@ -471,6 +476,9 @@ label {
 
   header {
     margin-top: 16px;
+  }
+  .mobile-menu .mobile-img {
+    display: none;
   }
 
   .click-button {
