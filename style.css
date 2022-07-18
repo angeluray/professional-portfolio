@@ -432,6 +432,9 @@ label {
     display: flex;
     flex-direction: column;
     border: 1px solid white;
+    background-image: url("images/shape-1.svg"), url("images/shape-2.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top: 92px left: 42.04px, top: 115.54px left: 318.94px;
   }
 
   .menu-sections {
