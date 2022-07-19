@@ -402,7 +402,6 @@ label {
     display: block;
     cursor: pointer;
     margin-left: 270px;
-  
   }
 
   .burguer-menu.active {
@@ -419,6 +418,8 @@ label {
     transition: all 0.3s ease-in-out;
     background-color: var(--primary-color);
   }
+   
+
 
   .burguer-menu.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
@@ -465,6 +466,10 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+     transition: 0.5s linear;
+  }
+  .menu-sections li a:hover {
+    color:turquoise;
   }
 
   .larrow {
