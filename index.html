@@ -17,28 +17,33 @@
 
 <body>
     <header class="top-container">
-        <a href="#" class="logo">Angel Uray</a>
         <nav class="nav-bar">
-            <a href="#" class="click-button"><img src="images/cancel.png" alt="Menu closed icon"
-                    class="menu-closed-icon"></a>
+            <a href="#" class="logo">Angel Uray</a>
+
+            <section class="order-container">
             <ul class="menu-sections">
-                <li><a href="#">Portfolio</a><img src="images/Union.png" alt="arrow selection" class="little-arrow">
-                </li>
-                <li><a href="#">About</a><img src="images/Union.png" alt="arrow selection" class="little-arrow"></li>
-                <li><a href="#">Contact</a><img src="images/Union.png" alt="arrow selection" class="little-arrow"></li>
+                <li class="mySpace"><a href="#work-portfolio" class="link-nav">Portfolio<img src="images/Union.png" alt="" class="larrow"></a></li>
+                <li><a href="#about-me" class="link-nav">About<img src="images/Union.png" alt="" class="larrow"></a></li>
+                <li><a href="#contact-me" class="link-nav">Contact<img src="images/Union.png" alt="" class="larrow"></a></li>
             </ul>
+            
             <a href="#"><img src="images/mail.svg" alt="Email icon" class="email-menu"></a>
-            <a href="#" class="click-button"><img src="images/barsicon.png" alt="Menu icon" class="menu-icon"></a>
-            <div class="mobile-menu">
-                <img src="images/shape-2.svg" alt="" class="mobile-img">
+            </section>
+
+            <div class="burguer-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+
+            
         </nav>
     </header>
 
 
     <section class="top-headline">
         <div class="my-name">
-            <h1 class="main-name">Angel Uray</h1>
+            <h1 class="main-name" id="about-me">Angel Uray</h1>
             <h2 class="pro-name">Software Developer</h2>
         </div>
 
@@ -119,7 +124,7 @@
     <section class="my-work">
 
         <div class="my-work-headline">
-            <h2 class="works-head">My recent works</h2>
+            <h2 class="works-head" id="work-portfolio">My recent works</h2>
             <div class="devider devider">
                 <img src="images/Devider.png" alt="Section devider" class="mobile-devider">
                 <img src="images/desktop-devider.png" alt="Section devider" class="desktop-devider">
@@ -209,7 +214,7 @@
     </section>
 
     <section class="my-contact-section">
-        <h2 class="contact-us">CONTACT US</h2>
+        <h2 class="contact-us" id="contact-me">CONTACT US</h2>
         <h2 class="contact-desktop">Let's chat!</h2>
         <p class="contact-quote">If you have an application you are interested in developing, a feature that you need
             built or a project that needs coding. I'd love to help with it </p>
