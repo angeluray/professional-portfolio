@@ -37,30 +37,6 @@ a {
   color: var(--neutral-color);
 }
 
-/*.menu-sections {
-  display: none;
-}
-
-.top-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-header {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  max-width: max-content;
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 0 24px;
-  color: var(--primary-color);
-}*/
-
 .top-headline {
   display: flex;
   flex-flow: column wrap;
@@ -404,14 +380,9 @@ label {
 }
 
 @media only screen and (max-width: 768px) {
-
   body {
     max-width: 100%;
     margin: 0 auto;
-  }
-
-  .menu-sections li {
-    list-style-type: none;
   }
 
   .nav-bar {
@@ -458,7 +429,7 @@ label {
   .menu-sections {
     position: fixed;
     left: -120%;
-    top: 0px;
+    top: 0;
     gap: 12px;
     display: flex;
     flex-direction: column;
@@ -470,7 +441,7 @@ label {
     margin: 0;
     background-image: url("images/shape-1.svg"), url("images/shape-2.svg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 0px 62.04px, 100% 432.54px;
+    background-position: 0 62.04px, 100% 432.54px;
   }
 
   .menu-sections .mySpace {
@@ -481,6 +452,7 @@ label {
     margin-top: 20px;
     font-size: 22px;
     width: 81%;
+    list-style-type: none;
   }
 
   .menu-sections li a {
@@ -496,7 +468,6 @@ label {
   .menu-sections.active {
     left: 0;
   }
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -540,7 +511,6 @@ label {
     display: flex;
     align-items: center;
   }
-
 
   .email-menu {
     display: flex;
@@ -780,5 +750,4 @@ label {
   .larrow {
     display: none;
   }
-
 }
