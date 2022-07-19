@@ -402,6 +402,12 @@ label {
     display: block;
     cursor: pointer;
     margin-left: 270px;
+  
+  }
+
+  .burguer-menu.active {
+    position: fixed;
+    right: 4%;
   }
 
   .bar {
