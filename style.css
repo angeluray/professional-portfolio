@@ -626,8 +626,11 @@ label {
     width: 80.277vw;
   }
 
-  .card-2,
-  .card-4 {
+  #card-2 {
+    flex-direction: row-reverse;
+  }
+
+  #card-4 {
     flex-direction: row-reverse;
   }
 
