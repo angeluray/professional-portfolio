@@ -23,7 +23,6 @@ const myCardsContent = [
     workTitle: 'Multi-Post Stories',
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
-
     seeLive: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
     seeSource: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
     myMbId: 'btnId1',

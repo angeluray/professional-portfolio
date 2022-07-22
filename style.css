@@ -446,19 +446,17 @@ label {
   list-style: none;
   justify-content: center;
   padding-right: 40px;
-  gap: 1rem;
 }
 
-.list1,
-.list2,
-.list3 {
+.list {
   border-left: 2px solid grey;
   font-weight: 500;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
+  padding: 0.5rem;
 }
 
-.list3 {
+.list4 {
   border-right: 2px solid grey;
 }
 
