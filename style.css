@@ -614,8 +614,6 @@ label {
   .menu-sections.active {
     left: 0;
   }
-}
-
 
 
 @media only screen and (min-width: 768px) {
