@@ -23,6 +23,7 @@ const myCardsContent = [
     workTitle: 'Multi-Post Stories',
     workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workTools: ['css', 'html', 'boostrap', 'ruby'],
+
     seeLive: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
     seeSource: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
     myMbId: 'btnId1',
@@ -124,6 +125,7 @@ function display() {
   const ulLi1 = document.createElement('li');
   const ulLi2 = document.createElement('li');
   const ulLi3 = document.createElement('li');
+  const ulLi4 = document.createElement('li');
   const divButton = document.createElement('div');
   const popBtn1 = document.createElement('button');
   const popBtn2 = document.createElement('button');
@@ -142,6 +144,7 @@ function display() {
   ulLi1.className = 'list1';
   ulLi2.className = 'list2';
   ulLi3.className = 'list3';
+  ulLi4.className = 'list4';
   divButton.className = 'button-div';
   popBtn1.className = 'button1';
   popBtn2.className = 'button2';
@@ -159,6 +162,7 @@ function display() {
   ul.appendChild(ulLi1);
   ul.appendChild(ulLi2);
   ul.appendChild(ulLi3);
+  ul.appendChild(ulLi4);
   sectionDiv.appendChild(divButton);
   divButton.appendChild(popBtn1);
   divButton.appendChild(popBtn2);
@@ -170,7 +174,7 @@ function display() {
   document.querySelector('.list1').textContent = myCardsContent[i].workTools[0];
   document.querySelector('.list2').textContent = myCardsContent[i].workTools[1];
   document.querySelector('.list3').textContent = myCardsContent[i].workTools[2];
-  document.querySelector('.list3').textContent = myCardsContent[i].workTools[3];
+  document.querySelector('.list4').textContent = myCardsContent[i].workTools[3];
   document.querySelector('.button1').textContent = 'See Live';
   document.querySelector('.button2').textContent = 'See Source';
 
