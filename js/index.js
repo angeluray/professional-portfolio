@@ -223,8 +223,8 @@ function validateEmail() {
   if (email.match(regExChecker)) {
     form.classList.add('valid');
     form.classList.remove('invalid');
-    emailMessage.innerHTML = '';
-    emailMessage.style.color = 'var(--warning-color)';
+    emailMessage.innerHTML = 'Validation complete';
+    emailMessage.style.color = 'var(--validation-color)';
   } else {
     form.classList.remove('valid');
     form.classList.add('invalid');
