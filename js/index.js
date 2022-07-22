@@ -141,10 +141,10 @@ function display() {
   windowImg.className = 'window-div-Img ';
   popupParagraph.className = 'divP';
   ul.className = 'listMain';
-  ulLi1.className = 'list1';
-  ulLi2.className = 'list2';
-  ulLi3.className = 'list3';
-  ulLi4.className = 'list4';
+  ulLi1.setAttribute('class', 'list list1');
+  ulLi2.setAttribute('class', 'list list2');
+  ulLi3.setAttribute('class', 'list list3');
+  ulLi4.setAttribute('class', 'list list4');
   divButton.className = 'button-div';
   popBtn1.className = 'button1';
   popBtn2.className = 'button2';
@@ -171,12 +171,16 @@ function display() {
   document.querySelector('.cancel').src = 'images/cancel.png';
   document.querySelector('.window-div-Img').src = myCardsContent[i].modalImage;
   document.querySelector('.divP').textContent = myCardsContent[i].workDescription;
-  document.querySelector('.list1').textContent = myCardsContent[i].workTools[0];
-  document.querySelector('.list2').textContent = myCardsContent[i].workTools[1];
-  document.querySelector('.list3').textContent = myCardsContent[i].workTools[2];
-  document.querySelector('.list4').textContent = myCardsContent[i].workTools[3];
   document.querySelector('.button1').textContent = 'See Live';
   document.querySelector('.button2').textContent = 'See Source';
+
+  const [list1, list2, list3, list4] = document.querySelectorAll('.list');
+  const [content1, content2, content3, content4] = myCardsContent[i].workTools;
+
+  list1.textContent = content1;
+  list2.textContent = content2;
+  list3.textContent = content3;
+  list4.textContent = content4;
 
   ClosImg.addEventListener('click', () => {
     windowSection.remove();
