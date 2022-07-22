@@ -387,23 +387,21 @@ label {
   z-index: 1000;
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   backdrop-filter: blur(10px);
-  
 }
 
 .popwindow-Container {
-  width: 80%;;
-  height: 96%;
+  width: 80%;
+  max-height: 96%;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid #fff;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 1);
@@ -427,14 +425,9 @@ label {
   width: 15px;
 }
 
-.popup-H .cancel {
-  margin-right: 10px;
-}
-
 .div-Img-Container {
   width: 100%;
   object-fit: contain;
-  border: 1px solid white;
 }
 
 .window-div-Img {
@@ -443,7 +436,6 @@ label {
 }
 
 .divP {
-  text-align: center;
   font-weight: 400;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
@@ -453,12 +445,13 @@ label {
   display: flex;
   list-style: none;
   justify-content: center;
+  padding-right: 40px;
+  gap: 1rem;
 }
 
 .list1,
 .list2,
 .list3 {
-  padding: 0 15px;
   border-left: 2px solid grey;
   font-weight: 500;
   font-size: 15px;
@@ -471,26 +464,27 @@ label {
 
 .button-div {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  padding-bottom: 1rem;
 }
 
 .button1 {
   background-color: #7d73fc;
-  background-image: url(./images/turn-off.png);
-  width: 150px;
+  background-image: url(./images/seeLiveIcon.svg);
+  background-position-y: center;
   background-repeat: no-repeat;
   background-position-x: 110px;
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-  background-position-y: center;
+  height: 50px;
+  width: 150px;
   padding: 12px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
   padding-left: 2px;
   border: none;
   filter: contrast(2);
-  color: white;
-  height: 50px;
-  margin-top: -5px;
 }
 
 .button2 {
@@ -507,13 +501,10 @@ label {
   filter: contrast(2);
   color: white;
   height: 50px;
-  margin-top: 13px;
-  margin-bottom: 4px;
 }
 
 
 /* popup ----------------------------------------------------------------------- */
-
 
 @media only screen and (max-width: 768px) {
   body {
@@ -614,7 +605,7 @@ label {
   .menu-sections.active {
     left: 0;
   }
-
+}
 
 @media only screen and (min-width: 768px) {
   * {
@@ -900,23 +891,19 @@ label {
     display: none;
   }
 
-
-
   .popwindow-Container {
     height: min-content;
   }
 
-
   .popup-H {
-    width: 80%;
-    margin: auto;
+    max-width: 100%;
   }
 
   .div-Img-Container {
     text-align: center;
   }
 
-  .window-div-Img{
+  .window-div-Img {
     width: 80%;
     height: 350px;
   }
@@ -926,12 +913,8 @@ label {
     margin: auto;
   }
 
-  .button2 {
-    margin-bottom: 5px;
+  .cancel {
+    width: 30px;
+    height: 30px;
   }
-.cancel {
-  width: 30px;
-  height: 30px;
-  
-}
 }
