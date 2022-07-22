@@ -143,7 +143,7 @@
         <h2 class="contact-desktop">Let's chat!</h2>
         <p class="contact-quote">If you have an application you are interested in developing, a feature that you need
             built or a project that needs coding. I'd love to help with it </p>
-        <form action="https://formspree.io/f/xayvgowp" method="POST">
+        <form id="myForm" action="https://formspree.io/f/xayvgowp" method="POST">
             <ul class="my-form">
                 <li>
                     <label for="user-name">Full name</label>
@@ -152,6 +152,7 @@
                 <li>
                     <label for="user-email">Email</label>
                     <input type="email" name="user-email" id="user-email" placeholder="aeiou@gmail.com" required>
+                    <span id="warningMessage"></span>
                 </li>
                 <li>
                     <label for="user-message">Message</label>

@@ -213,3 +213,24 @@ btnId4.addEventListener('click', () => {
   i = 3;
   display();
 });
+
+function ValidateEmail() {
+  const form = document.getElementById('myForm');
+  const email = document.getElementById('user-email').value;
+  const emailMessage = document.getElementById('warningMessage');
+
+  const regExChecker = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/gm;
+  if (email.match(regExChecker)) {
+    form.classList.add("valid");
+    form.classList.remove("invalid");
+    emailMessage.innerHTML = "Valid email";
+    emailMessage.style.color = "var(--warning-color)";
+  } else {
+    form.classList.remove("valid");
+    form.classList.add("invalid");
+    emailMessage.innerHTML = "Please enter a valid email";
+    emailMessage.style.color = "var(--warning-color)";
+  }
+}
+
+document.getElementById("user-email").addEventListener("keydown", ValidateEmail);
