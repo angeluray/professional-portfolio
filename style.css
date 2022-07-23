@@ -380,6 +380,19 @@ label {
   display: none;
 }
 
+/*-----validator----*/
+
+.validatorContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.warningContainer {
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
 /* popup -------------------------------------------------------------------- */
 .popupsection {
   width: 100%;
