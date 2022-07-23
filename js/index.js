@@ -218,18 +218,26 @@ function validateEmail() {
   const form = document.getElementById('myForm');
   const email = document.getElementById('user-email').value;
   const emailMessage = document.getElementById('warningMessage');
+  const msgButton = document.getElementById('my-form-button');
+  const warningButton = document.getElementById('messageButton');
 
   const regExChecker = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/gm;
   if (email.match(regExChecker)) {
     form.classList.add('valid');
     form.classList.remove('invalid');
-    emailMessage.innerHTML = 'Validation complete';
-    emailMessage.style.color = '#00ff00';
+    emailMessage.innerHTML = '';
+    emailMessage.style.color = '';
+    msgButton.classList.add('valid');
+    msgButton.classList.remove('invalid');
+    warningButton.innerHTML = 'Validation complete';
+    warningButton.style.color = '#00ff00';
   } else {
     form.classList.remove('valid');
     form.classList.add('invalid');
-    emailMessage.innerHTML = 'Email address should be in lowercase';
-    emailMessage.style.color = 'var(--warning-color)';
+    msgButton.classList.remove('valid');
+    msgButton.classList.add('invalid');
+    warningButton.innerHTML = 'Email address should be in lowercase';
+    warningButton.style.color = 'var(--warning-color)';
   }
 }
 
