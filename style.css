@@ -12,6 +12,7 @@
   --neutral-color: #f7f3ff;
   --disabled-color: #2a2b33;
   --contact-color: #9390ff;
+  --warning-color: #f00;
 }
 
 body {
@@ -280,7 +281,7 @@ a {
   width: 327px;
 }
 
-.my-form-button {
+#my-form-button {
   font-size: 12px;
   width: 95px;
   height: 44px;
@@ -289,20 +290,19 @@ a {
   font-weight: 600;
   border: none;
   margin-top: 20px;
-  margin-bottom: 90px;
   transition: 0.5s linear;
 }
 
-.my-form-button:enabled {
+#my-form-button:enabled {
   background-color: var(--tenth-color);
 }
 
-.my-form-button:hover {
+#my-form-button:hover {
   background-color: var(--tenth-color);
   box-shadow: 0 8px 16px rgb(125 115 252 / 48%);
 }
 
-.my-form-button:active {
+#my-form-button:active {
   background-color: var(--seventh-color);
 }
 
@@ -377,6 +377,17 @@ label {
 
 .little-arrow {
   display: none;
+}
+
+/* -----validator---- */
+
+.validatorButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 180px;
 }
 
 /* popup -------------------------------------------------------------------- */
@@ -841,11 +852,10 @@ label {
     resize: none;
   }
 
-  .my-form-button {
+  #my-form-button {
     width: 102px;
     height: 45px;
     font-size: 14px;
-    margin-bottom: 170px;
   }
 
   .last-devider {

@@ -143,23 +143,25 @@
         <h2 class="contact-desktop">Let's chat!</h2>
         <p class="contact-quote">If you have an application you are interested in developing, a feature that you need
             built or a project that needs coding. I'd love to help with it </p>
-        <form action="https://formspree.io/f/xayvgowp" method="POST">
+        <form id="myForm" action="https://formspree.io/f/xayvgowp" method="POST">
             <ul class="my-form">
                 <li>
                     <label for="user-name">Full name</label>
                     <input type="text" name="user-name" id="user-name" placeholder="Full name" maxlength="30" required>
                 </li>
-                <li>
+                <li class="validatorContainer">
                     <label for="user-email">Email</label>
                     <input type="email" name="user-email" id="user-email" placeholder="aeiou@gmail.com" required>
+                    <span id="warningMessage"></span>
                 </li>
                 <li>
                     <label for="user-message">Message</label>
                     <textarea name="user_name" id="user-message" maxlength="500" placeholder="Enter text here"
                         required></textarea>
                 </li>
-                <li>
-                    <button class="my-form-button" type="submit">Submit</button>
+                <li class="validatorButton">
+                    <button id="my-form-button" type="submit" >Submit</button>
+                    <span id="messageButton"></span>
                 </li>
             </ul>
         </form>
