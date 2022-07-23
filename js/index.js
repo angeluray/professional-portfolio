@@ -260,9 +260,9 @@ const userMessage = document.getElementById('user-message');
 function userStorage() {
   form.addEventListener('input', () => {
     const storageData = {
-      name: userName.value,
-      useremail: userEmail.value,
-      usermessage: userMessage.value,
+      name: `${userName.value}`,
+      useremail: `${userEmail.value}`,
+      usermessage: `${userMessage.value}`,
     };
     localStorage.setItem('storageData', JSON.stringify(storageData));
   });
