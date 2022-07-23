@@ -224,11 +224,7 @@ function validateEmail() {
     form.classList.add('valid');
     form.classList.remove('invalid');
     emailMessage.innerHTML = 'Validation complete';
-<<<<<<< HEAD
-    emailMessage.style.color = 'var(--validation-color)';
-=======
-    emailMessage.style.color = '';
->>>>>>> da64abb6da96d5d8435c6ecce4646e422e2e49ec
+    emailMessage.style.color = '#00ff00';
   } else {
     form.classList.remove('valid');
     form.classList.add('invalid');
