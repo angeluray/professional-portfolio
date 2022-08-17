@@ -17,14 +17,14 @@ const myCardsContent = [
 
   {
     myCardId: 'card-1',
-    workImage: 'images/imageplaceholder.png',
-    modalImage: 'images/SnapshootPortfolio.svg',
+    workImage: 'images/To-Do-List.png',
+    modalImage: 'images/To-Do-List.png',
     modalImgClose: 'images/cancel.png',
-    workTitle: 'Multi-Post Stories',
-    workDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    workTools: ['css', 'html', 'boostrap', 'ruby'],
-    seeLive: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
-    seeSource: 'https://www.youtube.com/watch?v=4fQeaM62mOY',
+    workTitle: 'Personal To-Do List',
+    workDescription: '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
+    workTools: ['CSS', 'HTML', 'JavaScript'],
+    seeLive: 'https://angeluray.github.io/angel-todo-list/',
+    seeSource: 'https://github.com/angeluray/angel-todo-list',
     myMbId: 'btnId1',
 
   },
