@@ -22,7 +22,7 @@ const myCardsContent = [
     modalImgClose: 'images/cancel.png',
     workTitle: 'Personal To-Do List',
     workDescription: '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
-    workTools: ['CSS', 'HTML', 'JavaScript'],
+    workTools: ['CSS', 'HTML', 'JavaScript', 'Linters'],
     seeLive: 'https://angeluray.github.io/angel-todo-list/',
     seeSource: 'https://github.com/angeluray/angel-todo-list',
     myMbId: 'btnId1',
@@ -128,6 +128,8 @@ function display() {
   const divButton = document.createElement('div');
   const popBtn1 = document.createElement('button');
   const popBtn2 = document.createElement('button');
+  const myAnchorSee = document.createElement('a');
+  const myAnchorSource = document.createElement('a');
 
   popbody.className = 'popbody';
   windowSection.className = 'popupsection';
@@ -169,6 +171,8 @@ function display() {
   document.querySelector('.windowTitle').textContent = myCardsContent[i].workTitle;
   document.querySelector('.cancel').src = 'images/cancel.png';
   document.querySelector('.window-div-Img').src = myCardsContent[i].modalImage;
+  document.querySelector('.window-div-Img').style.width = '350px';
+  document.querySelector('.window-div-Img').style.height = 'auto';
   document.querySelector('.divP').textContent = myCardsContent[i].workDescription;
   document.querySelector('.button1').textContent = 'See Live';
   document.querySelector('.button2').textContent = 'See Source';
@@ -186,11 +190,11 @@ function display() {
   });
 
   popBtn1.addEventListener('click', () => {
-    window.open(myCardsContent[i].btnLive);
+    window.open(myCardsContent[i].seeLive);
   });
 
   popBtn2.addEventListener('click', () => {
-    window.open(myCardsContent[i].btnSource);
+    window.open(myCardsContent[i].seeSource);
   });
 }
 
